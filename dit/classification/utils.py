@@ -277,6 +277,7 @@ def init_distributed_mode(args):
 
     args.distributed = True
     args.gpu = 0
+    args.rank = 0
     print("das ist args.gpu", args.gpu)
 
     torch.cuda.set_device(args.gpu)
